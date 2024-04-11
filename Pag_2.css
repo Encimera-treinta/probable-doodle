@@ -1,0 +1,184 @@
+/*ESTO ES EL NAV */
+body {
+    background-color: #844e4e;
+  }
+  
+  html,
+  body {
+    display: grid;
+    text-align: center;
+    justify-content: left;
+    place-items: center;
+    height: 100px;
+    right: 500px;
+  }
+  .container_1 {
+    height: 50%;
+    width: 50%;
+    background-color: aqua;
+
+  }
+  
+  .container {
+    height: 61.5px;
+    width: 500px;
+    line-height: 60px;
+    background: #555555;
+    border-radius: 6px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    top: px;
+  }
+  
+  .nav {
+    position: relative;
+    display: flex;
+  }
+  
+  .label {
+    z-index: 1;
+    flex: 1;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+  }
+  
+  .ref {
+    position: relative;
+    z-index: -1;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.4s ease;
+  }
+  
+  .container nav #home:checked ~ label.home a,
+  .container nav #about:checked ~ label.about a,
+  .container nav #contact:checked ~ label.contact a,
+  .container nav #photos:checked ~ label.photos a {
+    color: black;
+  }
+  
+  .tab {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #f9c100, #f9c100);
+    border-radius: 6px;
+    transition: 0.5s cubic-bezier(0.69, -0.20, 0.265, 1.0);
+  }
+  
+  .input {
+    display: none;
+  }
+  
+  .nav #about:checked ~ .tab {
+    left: 35%;
+  }
+  .nav #photos:checked ~ .tab {
+    left: 70%;
+  }
+  .nav #contact:checked ~ .tab {
+    left:  100%;
+  }
+  /* AQUI ACABA EL NAV  */
+
+  
+/* Primer container */
+  .container_2 {
+    position: fixed; /* Posición fija para que se mantenga en su lugar mientras se desplaza la página */
+    top: 20%; /* Distancia desde la parte superior de la ventana del navegador */
+    left: 2%; /* Distancia desde el lado derecho de la ventana del navegador */
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    border-radius: 30px;
+    transition: transform 0.3s ease; /* Agrega transición suave al transform */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el contenedor */
+  }
+  
+  .container_2:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del contenedor al pasar el ratón */
+  }
+  
+  .pro img {
+    padding: 5%;
+    height: 450px;
+    width: 450px;
+    border-radius: 5%;
+  }
+  
+  .pro {
+    height: 100px;
+    width: 50%;
+  }
+  
+  .pro:hover {
+    border-color: #ccc; /* Color del borde al pasar el ratón */
+  }
+  /* aqui acaba el container  */
+
+   /* aqui empieza el tercer container*/
+   .container_3 {
+    float: left; /* Hace que los contenedores se alineen uno al lado del otro */
+    margin-right: 50%; /* Espacio entre los contenedores */
+    position: fixed; /* Posición fija para que se mantenga en su lugar mientras se desplaza la página */
+    top: 20%; /* Distancia desde la parte superior de la ventana del navegador */
+    left: 800px; /* Distancia desde el lado derecho de la ventana del navegador */
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    border-radius: 30px;
+    transition: transform 0.3s ease; /* Agrega transición suave al transform */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el contenedor */
+  }
+  
+  .container_3:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del contenedor al pasar el ratón */
+  }
+  
+  .pro img {
+    padding: 5%;
+    height: 450px;
+    width: 450px;
+    border-radius: 5%;
+  }
+  
+  .pro {
+    height: 100px;
+    width: 50%;
+  }
+  
+  .pro:hover {
+    border-color: #ccc; /* Color del borde al pasar el ratón */
+  }
+  
+  /*  aqui acaba el container 3*/
+  
+  .footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 20px 0; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    position: fixed; /* Posición fija en la parte inferior de la pantalla */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 1200px; /* Ancho máximo del contenido del footer */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+  }
+  
+  .container p {
+    margin: 0; /* Elimina el margen predeterminado del párrafo */
+  }
+  
+
+
+
+  /* FOOTER */

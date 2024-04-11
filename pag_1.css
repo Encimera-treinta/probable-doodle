@@ -1,0 +1,86 @@
+html {
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.imagen_2 {
+    background-image: url('ilustraciones/Fondo_pag_1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw; 
+    height: 100vh; 
+    position: relative;
+}
+
+@keyframes moveAnimation {
+    0% { top: 30%; }
+    50% { top: 40%; }
+    100% { top: 30%; }
+}
+
+.imagen_2 h1 {
+    position: absolute; 
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    color: rgb(97, 48, 48); 
+    margin-top: -150px;
+    animation: moveAnimation 5s infinite; /* Aplica la animación al elemento */
+}
+
+.boton {
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    color: white;
+    background-color: rgb(117, 65, 164);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+
+.boton:hover {
+    transform: translate(-50%, -50%) scale(1.1); 
+}
+
+
+.otro-boton {
+    text-decoration: none; 
+}
+
+.otro-boton:hover .boton {
+    background-color: rgb(76, 14, 212); 
+    border-color: green; 
+    color: white; 
+}
+.cuadro1 {
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 999; 
+}
+.cuadro2 {
+    position: fixed;
+    top: 30%;
+    left: 70%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.5); 
+    z-index: 999; 
+}
